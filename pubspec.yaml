@@ -1,0 +1,32 @@
+name: bakpau_kasir
+description: Aplikasi kasir sederhana untuk penjualan bakpau (16 varian).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.2              # state management sederhana
+  intl: ^0.19.0                 # format Rupiah & tanggal
+  excel: ^4.0.6                 # tulis/append file .xlsx
+  path_provider: ^2.1.4         # lokasi folder file Excel
+  share_plus: ^7.2.2            # bagikan struk (teks) & file Excel
+  pdf: ^3.11.1                  # buat file PDF struk
+  printing: ^5.13.2             # cetak via WiFi / AirPrint / simpan PDF
+  print_bluetooth_thermal: ^1.1.1  # cetak langsung ke printer thermal Bluetooth
+  permission_handler: ^11.3.1   # minta izin Bluetooth (Android 12+)
+  shared_preferences: ^2.3.2   # <-- TAMBAHAN: simpan stok & log permanen
+  flutter_tts: ^4.0.2 
+  blue_thermal_printer: ^1.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
